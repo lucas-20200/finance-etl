@@ -1,0 +1,14 @@
+# 類別,套件名稱,用途說明
+# 資料擷取 (Extract),yfinance / requests,yfinance 適合快速抓歷史與每日股價（上市加 .TW，上櫃加 .TWO）；requests 用來打 TWSE OpenAPI 抓官方盤後資訊。
+# 資料處理 (Transform),pandas / numpy,清洗缺漏值、計算日報酬率、移動平均線（MA5 / MA20）與成交量變化。
+# 資料庫連線 (Load),sqlalchemy / psycopg2-binary,Python 連接 PostgreSQL 並將 DataFrame 高效寫入資料表的標準組合。
+# 儀表板 (Present),streamlit / plotly,streamlit 快速建構網頁介面；plotly 繪製可縮放、看數值的互動式 K 線圖。
+
+yfinance>=0.2.40
+pandas>=2.2.0
+numpy>=1.26.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.9
+streamlit>=1.35.0
+plotly>=5.22.0
+requests>=2.31.0
