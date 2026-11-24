@@ -1,0 +1,14 @@
+# 虛擬環境
+.venv/
+venv/
+
+# Python 快取
+__pycache__/
+*.py[cod]
+
+# 環境變數與密碼
+.env
+
+# macOS / Windows 系統隱藏檔
+.DS_Store
+Thumbs.db
